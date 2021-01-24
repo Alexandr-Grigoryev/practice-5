@@ -360,8 +360,11 @@
           </div>
         </section>
       </main>
+
+      <!-- footer -->
+
       <section class="footer-section">
-        <footer class="container container-flex">
+        <footer class="container container-footer">
           <div class="address">
             <a href="./index.html" class="footer-logo-link">
               <span class="logo-accent">Web</span>Studio
@@ -412,6 +415,23 @@
               </li>
             </ul>
           </div>
+          <div class="footer-email-input">
+            <h2 class="footer-title">Подпишитесь на рассылку</h2>
+            <div class="email-input">
+              <form>
+                <label class="form-field">
+                  <input type="email" name="email" class="email-input-form" />
+                  <span class="form-label">E-mail</span>
+                </label>
+              </form>
+              <button type="submit" class="email-input-button">
+                Подписаться
+                <svg width="24" height="24">
+                  <use href="./sprite.svg#send-button"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </footer>
       </section>
       <div class="backdrop is-hidden" data-modal>
@@ -421,6 +441,23 @@
               <use href="./sprite.svg#close-black"></use>
             </svg>
           </button>
+          <p class="form-description">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <form>
+            <div class="modal-form-field">
+              <label for="text">Имя</label>
+              <input type="text" name="text" id="text" />
+            </div>
+            <div class="modal-form-field">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+            </div>
+            <div class="modal-form-field">
+              <label for="email">Почта</label>
+              <input type="email" name="email" id="email" />
+            </div>
+          </form>
         </div>
       </div>
       <script src="./modal.js"></script>
