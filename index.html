@@ -419,9 +419,13 @@
             <h2 class="footer-title">Подпишитесь на рассылку</h2>
             <div class="email-input">
               <form class="footer-form-field">
-                <label class="form-field">
-                  <input type="email" name="email" class="email-input-form" />
-                  <span class="form-label">E-mail</span>
+                <label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="email-input-form"
+                    placeholder="E-mail"
+                  />
                 </label>
                 <button type="submit" class="email-input-button">
                   Подписаться
@@ -476,10 +480,19 @@
               ></textarea>
             </div>
             <div class="modal-checkbox">
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              <label for="checkbox"
-                >Соглашаюсь с рассылкой и принимаю Условия договора</label
-              >
+              <label for="checkbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                />
+                <span class="modal-checkbox-icon"></span>
+                <span class="policy"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a></span
+                >
+              </label>
             </div>
             <div>
               <button class="modal-submit" type="submit">Отправить</button>
