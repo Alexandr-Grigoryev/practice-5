@@ -1,11 +1,6 @@
-/* цвет основного текста #212121 */
-/* вторичный цвет #757575 */
-/* цвет фона секции "Наша команда" #F5F4FA */
-/* цвет фона скции футер #2F303A */
-
-/* белый #FFFFFF */
-/* акцент #2196F3 */
-
+// @import 'utils/variables' /* цвет основного текста #212121 */
+/* вторичный цвет #757575 */ /* цвет фона секции "Наша команда" #F5F4FA */
+/* цвет фона скции футер #2F303A */ /* белый #FFFFFF */ /* акцент #2196F3 */
 :root {
   --filter-button-text-color: #212121;
   --filter-button-bg-color: #f5f4fa;
@@ -17,7 +12,6 @@
 
   --main-font-family: 'Roboto', sans-serif;
   --sec-font-family: 'Raleway', sans-serif;
-  /* --primary-text-style: 'Roboto', sans-serif; */
 }
 /* .outer {
   max-width: 1600px;
