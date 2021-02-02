@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* цвет основного текста #212121 */
 /* вторичный цвет #757575 */
 /* цвет фона секции "Наша команда" #F5F4FA */
 /* цвет фона скции футер #2F303A */
@@ -217,7 +218,7 @@ body {
   background: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero-Img-1.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-Img-1.jpg");
-  /* background-image:linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url('../image/plaine-1.jpg'); */
+  background-image: url(https://picsum.photos/1600);
   background-repeat: no-repeat;
   /* background-size: cover; */
   /* background-size: contain; */
