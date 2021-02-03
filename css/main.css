@@ -1,81 +1,4 @@
 @charset "UTF-8";
-/* цвет основного текста #212121 */
-/* вторичный цвет #757575 */
-/* цвет фона секции "Наша команда" #F5F4FA */
-/* цвет фона скции футер #2F303A */
-/* белый #FFFFFF */
-/* акцент #2196F3 */
-:root {
-  --filter-button-text-color: #212121;
-  --filter-button-bg-color: #f5f4fa;
-  --primary-text-color: #757575;
-  --title-text-clolr: #212121;
-  --accent-color: #2196f3;
-  --primary-bg-color: #ffffff;
-  --main-font-family: "Roboto", sans-serif;
-  --sec-font-family: "Raleway", sans-serif;
-}
-
-/* .outer {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-body {
-  background: var(--primary-bg-color);
-  color: var(--primary-text-color);
-  font-family: var(--main-font-family);
-  letter-spacing: 0.03em;
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  fill: var(--primary-text-color);
-  -webkit-transition-property: color, fill;
-  transition-property: color, fill;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.mail-icon {
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-}
-
-.smartphone-icon {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
-  /* outline: 2px solid blueviolet; */
-}
-
 /* header */
 .header-section {
   background-color: #ffffff;
@@ -94,6 +17,18 @@ body {
 .list-mail-tel {
   margin-left: auto;
   list-style: none;
+}
+
+.mail-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone-icon {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
 }
 
 /* nav */
@@ -187,6 +122,93 @@ body {
   background-position: center;
   background-image: url(../image/smartphone.svg);
 } */
+.backdrop {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+          transform: translate(-50%, -50%) scale(0.7);
+}
+
+/* цвет основного текста #212121 */
+/* вторичный цвет #757575 */
+/* цвет фона секции "Наша команда" #F5F4FA */
+/* цвет фона скции футер #2F303A */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+:root {
+  --filter-button-text-color: #212121;
+  --filter-button-bg-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --title-text-clolr: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --main-font-family: "Roboto", sans-serif;
+  --sec-font-family: "Raleway", sans-serif;
+}
+
+/* .outer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+body {
+  background: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: var(--main-font-family);
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  fill: var(--primary-text-color);
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+  /* outline: 2px solid blueviolet; */
+}
+
 /* logo  */
 .logo-link {
   margin-right: 93px;
@@ -940,29 +962,6 @@ body {
 }
 
 /* transform: perspective(600px) rotateX(45deg); */
-/* modal window*/
-.backdrop {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.7);
-          transform: translate(-50%, -50%) scale(0.7);
-}
-
 .modal {
   position: absolute;
   left: 50%;
