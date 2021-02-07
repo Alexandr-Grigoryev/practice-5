@@ -11,20 +11,9 @@ body {
   letter-spacing: 0.03em;
 }
 
-.link {
-  text-decoration: none;
-  color: currentColor;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  fill: var(--primary-text-color);
-  -webkit-transition-property: color, fill;
-  transition-property: color, fill;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .link:hover,
@@ -50,8 +39,7 @@ body {
 .header {
   background-color: #ffffff;
 }
-
-.container-header {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,17 +62,14 @@ body {
   display: flex;
   list-style: none;
 }
-
 .nav-list-item {
   position: relative;
 }
-
-.nav-list a {
+.nav-list-item a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .nav-list li:not(:last-child) {
   margin-right: 50px;
 }
@@ -95,6 +80,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  fill: var(--primary-text-color);
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-icon {
@@ -110,7 +111,7 @@ body {
 }
 
 .list-mail-tel .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
   display: block;
 }
 
@@ -199,7 +200,8 @@ body {
   background: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/hero-Img-1.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-Img-1.jpg");
-  background-image: url(https://picsum.photos/1600);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://picsum.photos/1600);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(https://picsum.photos/1600);
   background-repeat: no-repeat;
   /* background-size: cover; */
   /* background-size: contain; */
