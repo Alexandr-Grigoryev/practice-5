@@ -17,6 +17,9 @@
   &-list-item {
     position: relative;
   }
+  .link.current {
+    color: $accent-color;
+  }
   &-list-item a {
     display: block;
     padding-top: 32px;
@@ -30,63 +33,48 @@
   margin-left: auto;
   list-style: none;
   display: flex;
+  .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .mail-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+  .smartphone-icon {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+  }
+  .item + .item {
+    margin-left: 30px;
+    display: block;
+  }
 }
 .link {
-  text-decoration: none;
-  color: currentColor;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  fill: var(--primary-text-color);
-  transition-property: color, fill;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mail-icon {
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-}
-.smartphone-icon {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-}
-
-.list-mail-tel .item + .item {
-  margin-left: 30px;
-  display: block;
-}
-.list-mail-tel a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.link.current {
-  color: var(--accent-color);
-}
-
-.link.current.studio::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  background-color: var(--accent-color);
-  border-radius: 50px;
-  height: 4px;
-  width: 48px;
-}
-.link.current.portfolio::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  background-color: var(--accent-color);
-  border-radius: 50px;
-  height: 4px;
-  width: 76px;
+  &.current.studio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background-color: $accent-color;
+    border-radius: 50px;
+    height: 4px;
+    width: 100%;
+  }
+  &.current.portfolio::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background-color: $accent-color;
+    border-radius: 50px;
+    height: 4px;
+    width: 76px;
+  }
 }
 
 /* .mail-item::before {
