@@ -76,7 +76,33 @@
     width: 76px;
   }
 }
+.heder-menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.heder-menu-button .icon-cross {
+  display: none;
+}
 
+.heder-menu-button.is-open .icon-menu {
+  display: none;
+}
+.heder-menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  // width: 100%;
+  &.is-open {
+    display: block;
+  }
+}
 /* .mail-item::before {
   display: inline-flex;
   margin-right: 10px;
